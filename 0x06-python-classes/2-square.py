@@ -2,7 +2,6 @@
 class Square:
     """a class Square that defines a square"""
 
-
     def __init__(self, size=0):
         """Initialize a new square"""
         if type(int) != int:
