@@ -6,8 +6,10 @@
 class Square:
 
     def __init__(self, size=0):
-        """Initialize the square class"""
-
+        """Initialize the square class
+        Args:
+            size(int): size of the Square
+        """
         self.__size = size
 
     @property
@@ -24,9 +26,7 @@ class Square:
             self.__size = value
 
     def area(self):
-        """
-            Public instance method that returns the current square area
-        """
+        """Returns the current square area"""
         return self.__size ** 2
 
     def my_print(self):
@@ -35,7 +35,7 @@ class Square:
         for i in range(0, self.__size):
             for j in range(0, self.__size):
                 if self.__size == 0:
-                    print('\n')
+                    print('')
                 else:
                     print("#", end="")
-            print()
+            print("")
