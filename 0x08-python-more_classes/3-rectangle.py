@@ -20,6 +20,7 @@ class Rectangle:
     def height(self):
         """property to retrieve height"""
         return self.__height
+
     @height.setter
     def height(self, value):
         """property setter to set height"""
@@ -33,6 +34,7 @@ class Rectangle:
     def width(self):
         """property to retreive width"""
         return self.__width
+
     @width.setter
     def width(self, value):
         """property setter to set width"""
@@ -41,6 +43,7 @@ class Rectangle:
         elif value < 0:
             raise ValueError('width must be >= 0')
         self.__width = value
+
     def area(self):
         """Returns the rectangle area"""
         return self.__height * self.__width
@@ -59,4 +62,3 @@ class Rectangle:
                     shape += '#'
             shape += '\n'
         return shape
-
