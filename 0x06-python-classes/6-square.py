@@ -26,6 +26,7 @@ class Square:
     @property
     def position(self):
         return self.__position
+
     @position.setter
     def position(self, value):
         if len(position) != 2:
@@ -46,5 +47,6 @@ class Square:
                 if self.__size == 0:
                     print('\n')
                 else:
+                    print(position[1] * '_', end='')
                     print("#", end="")
             print()
