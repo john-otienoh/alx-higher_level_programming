@@ -4,8 +4,7 @@
 
 def print_square(size):
     """Print  a square with the character #.
-
-    Args: 
+    Args:
         size - size length of the square.
     Raises:
         TypeError: if size is not an integer.
