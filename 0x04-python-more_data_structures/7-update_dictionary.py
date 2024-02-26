@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 def update_dictionary(a_dictionary, key, value):
-    my_dict = {}
-    for i, j in a_dictionary.items():
-        my_dict[i] = j
+    list_keys = list(a_dictionary.key())
+    for i in list_keys:
         if i == key:
-            my_dict[i] = value
+            a_dictionary[i] = value
         else:
-            my_dict[key] = value
+            a_dictionary[key] = value
 
-    return my_dict
+    return a_dictionary
