@@ -16,7 +16,8 @@ if __name__ == "__main__":
             port=3306
         )
     cursor = db.cursor()
-    cursor.execute("""SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON states.id=cities.state_id""")
+    cursor.execute("""SELECT cities.id, cities.name, states.name
+            FROM cities INNER JOIN states ON states.id=cities.state_id""")
     results = cursor.fetchall()
     for i in results:
         print(i)
