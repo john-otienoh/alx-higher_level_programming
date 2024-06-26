@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a list subclass MyList"""
 
+
 class MyList(list):
     """Represents a List"""
 

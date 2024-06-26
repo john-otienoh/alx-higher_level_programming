@@ -14,7 +14,7 @@ class Square(Rectangle):
         super().__init__(size, size)
         super().integer_validator("size", size)
         self.__size = size
-        
+
     def area(self):
         """Returns the area of the square"""
         return self.__size * self.__size
@@ -24,4 +24,3 @@ class Square(Rectangle):
         string = "[" + str(self.__class__.__name__) + "] "
         string += str(self.__size) + "/" + str(self.__size)
         return string
-    
