@@ -20,7 +20,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
@@ -35,8 +35,7 @@ class Square:
         for i in range(0, self.__size):
             for j in range(0, self.__size):
                 if self.__size == 0:
-                    print("")
-                    print("")
+                    print("\n")
                 else:
                     print("#", end="")
             print("")
